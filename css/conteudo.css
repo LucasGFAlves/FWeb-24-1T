@@ -1,0 +1,35 @@
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.busca, 
+.menu-conteudo{
+    background-color: gray;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 230px;
+    margin-right: 10px;
+    float: left;
+}
+
+.busca, 
+.busca form, 
+.menu-conteudo h2{
+    margin: 10px;
+}
+
+.menu-conteudo li{
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-conteudo a{
+    color: grey;
+}
+
+.menu-conteudo{
+    clear: both;
+}

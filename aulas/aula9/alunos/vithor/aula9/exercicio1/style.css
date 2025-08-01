@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(135deg, #fff8dc, #ffeaa7);
+    font-family: 'Caveat', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/hexellence.png');
+    /* textura de colmeia */
+}
+
+.card {
+    background-color: #fffbea;
+    border: 3px dashed #f4c542;
+    border-radius: 20px;
+    padding: 40px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.abelha {
+    font-size: 40px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    animation: voar 3s infinite ease-in-out;
+}
+
+@keyframes voar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+h1 {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 30px;
+    color: #d35400;
+    margin-bottom: 20px;
+}
+
+.mensagem {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.icones i {
+    font-size: 28px;
+    color: #f39c12;
+    margin: 0 10px;
+}
+
+.assinatura {
+    font-size: 16px;
+    margin-top: 30px;
+    color: #666;
+    font-style: italic;
+}
+.james img {
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #f4c542;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

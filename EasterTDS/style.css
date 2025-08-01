@@ -1,0 +1,194 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-image:url("./fundo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+header{
+    width: 100%;
+    height: 10%;
+}
+
+main{
+    width: 100%;
+    height: 80%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+header h1 {
+    color: #e64a19; /* Laranja vibrante */
+    margin-bottom: 20px;
+}
+
+.mensagem-principal {
+    margin-bottom: 30px;
+}
+
+.ovo-animado {
+    position: relative;
+    width: 100px;
+    height: 130px;
+    background-color: #fdd835; /* Amarelo ovo */
+    border-radius: 50%;
+    margin: 20px auto;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ovo-animado:hover {
+    transform: scale(1.1);
+}
+
+.ovo-parte {
+    background-color: #fdd835;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.ovo-parte.superior {
+    width: 100px;
+    height: 70px;
+    top: 0;
+    background: linear-gradient(to bottom, #fdd835 50%, transparent 50%);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.ovo-parte.inferior {
+    width: 100px;
+    height: 70px;
+    bottom: 0;
+    background: linear-gradient(to top, #fdd835 50%, transparent 50%);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.surpresa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.ovo-animado.aberto .surpresa {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.mensagem-vitoria {
+    color: green;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mensagem-parabens {
+    color: #ff9800; /* Laranja mais suave */
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.mensagem-extra {
+    font-size: 0.9em;
+    color: #555;
+}
+
+#abrir-ovo {
+    background-color: #4caf50; /* Verde alegre */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#abrir-ovo:hover {
+    background-color: #45a049;
+}
+
+.interativa {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.desafio p {
+    margin-bottom: 10px;
+}
+
+#mostrar-solucao {
+    background-color: #2196f3; /* Azul */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+#mostrar-solucao:hover {
+    background-color: #1976d2;
+}
+
+#solucao {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #e0f7fa; /* Azul claro */
+    border-radius: 5px;
+    border: 1px solid #b2ebf2;
+    text-align: left;
+}
+
+.oculta {
+    display: none;
+}
+
+.agradecimento {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+    font-size: 0.8em;
+}

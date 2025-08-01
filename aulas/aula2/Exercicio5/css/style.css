@@ -1,0 +1,5 @@
+p {
+    color: violet;
+    background-image: url("./../../Exercicio1/img/dumbledore.jpg");
+    background-size: contain;
+}

@@ -1,0 +1,13 @@
+.dpainel{
+    width: 800px;
+    height: 600px;
+    background-color: green;
+    position: relative;
+}
+
+img{
+    width: 100px;
+    height: auto;
+    position:absolute;
+    right: 0;
+}
